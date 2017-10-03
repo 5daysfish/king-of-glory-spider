@@ -4,9 +4,9 @@ module.exports = {
      * 获取request配置数据
      * @param {String} url 
      */
-    getRequestOptions(url, opts) {
+    getRequestOptions(uri, opts) {
         const def = {
-            url,
+            uri,
             encoding: null
         };
         return opts ? Object.assign(def, opts) : def;
@@ -24,7 +24,7 @@ module.exports = {
      * @param {Number} heroid
      */
     getHeroDetail(heroid) {
-        return 'http://pvp.qq.com/m/m201706/herodetail/' + heroid + '.html';
+        return 'http://pvp.qq.com/web201605/herodetail/m/' + heroid + '.html';
     },
 
     getEquipUrl() {

@@ -216,12 +216,25 @@ function scraper(index, length) {
 
         const heroData = { hero_id, hero_name, hero_avatar, hero_type, hero_cover, isNew };
 
-        const url = utils.getHeroDetail(hero_id);
+        const uri = utils.getHeroDetail(hero_id);
+        let opts = utils.getRequestOptions(uri, {
+            transform: body => cheerio.load(body)
+        });
 
-        rp(utils.getRequestOptions(url, {
-                transform: body => cheerio.load(body)
-            }))
+        // Fix: 部分页面编码为gbk，需要进行转码
+        if(hero_id==194 || hero_id==196) {
+            opts = utils.getRequestOptions(uri, {
+                transform: function(body, response) {
+                    // console.log(response.headers['content-type']);
+                    var result = iconv.convert(new Buffer(body, 'binary')).toString();
+                    return cheerio.load(result);
+                }
+            });
+        }
+
+        rp(opts)
             .then(function($) {
+                // console.log($('.wrap .home_top .logo_cont .logo_title h1').text());
                 heroData.attr = attr($);
                 heroData.skills = skills($);
                 heroData.summoner = summoner($);
@@ -235,8 +248,10 @@ function scraper(index, length) {
                 storage.saveOrUpdate({ key: 'hero_id', val: hero_id }, 'Hero', heroData);
                 console.log(index, hero_name)
                 scraper(++index, length);
+            })
+            .catch(function(err) {
+                console.warn(err)
             });
-
     }
 }
 
@@ -248,7 +263,8 @@ function hero() {
     storage.init();
     // Todo 批量上传
     // 指定下标上传
-    // scraper(69, 70);
+    // console.log(herolist_data.length)
+    scraper(70, 71);
 }
 
 module.exports = hero;

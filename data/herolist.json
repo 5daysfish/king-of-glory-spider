@@ -9,6 +9,7 @@
 	"ename": 106,
 	"cname": "小乔",
 	"title": "恋之微风",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 2,
 	"skin_name": "恋之微风|万圣前夜|天鹅之梦|纯白花嫁|缤纷独角兽"
@@ -31,7 +32,7 @@
 }, {
 	"ename": 109,
 	"cname": "妲己",
-	"title": "魅惑之狐",
+	"title": "魅力之狐",
 	"pay_type": 11,
 	"new_type": 0,
 	"hero_type": 2,
@@ -70,6 +71,7 @@
 	"ename": 114,
 	"cname": "刘禅",
 	"title": "暴走机关",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 3,
 	"skin_name": "暴走机关|英喵野望|绅士熊喵"
@@ -115,7 +117,6 @@
 	"ename": 120,
 	"cname": "白起",
 	"title": "最终兵器",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 3,
 	"skin_name": "最终兵器|白色死神|狰"
@@ -205,6 +206,7 @@
 	"ename": 134,
 	"cname": "达摩",
 	"title": "拳僧",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 1,
 	"skin_name": "拳僧|大发明家|拳王"
@@ -241,7 +243,6 @@
 	"ename": 141,
 	"cname": "貂蝉",
 	"title": "绝世舞姬",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 2,
 	"hero_type2": 4,
@@ -281,7 +282,6 @@
 	"ename": 149,
 	"cname": "刘邦",
 	"title": "双面君主",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 3,
 	"hero_type2": 6,
@@ -320,6 +320,7 @@
 	"ename": 156,
 	"cname": "张良",
 	"title": "言灵之书",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 2,
 	"skin_name": "言灵之书|天堂福音|一千零一夜"
@@ -389,6 +390,7 @@
 	"ename": 171,
 	"cname": "张飞",
 	"title": "禁血狂兽",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 3,
 	"hero_type2": 6,
@@ -411,7 +413,6 @@
 	"ename": 175,
 	"cname": "钟馗",
 	"title": "虚灵城判",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 2,
 	"hero_type2": 1,
@@ -420,6 +421,7 @@
 	"ename": 177,
 	"cname": "成吉思汗",
 	"title": "苍狼末裔",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 5,
 	"skin_name": "苍狼末裔|维京掠夺者"
@@ -449,6 +451,7 @@
 	"ename": 186,
 	"cname": "太乙真人",
 	"title": "炼金大师",
+	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 6,
 	"hero_type2": 3,
@@ -457,7 +460,6 @@
 	"ename": 180,
 	"cname": "哪吒",
 	"title": "桀骜炎枪",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 1,
 	"skin_name": "桀骜炎枪|三太子"
@@ -467,12 +469,11 @@
 	"title": "绝代智谋",
 	"new_type": 0,
 	"hero_type": 2,
-	"skin_name": "绝代智谋|星航指挥官"
+	"skin_name": "绝代智谋|星航指挥官|黄金分割率"
 }, {
 	"ename": 192,
 	"cname": "黄忠",
 	"title": "燃魂重炮",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 5,
 	"skin_name": "燃魂重炮|芝加哥教父"
@@ -480,7 +481,6 @@
 	"ename": 191,
 	"cname": "大乔",
 	"title": "沧海之曜",
-	"pay_type": 10,
 	"new_type": 0,
 	"hero_type": 6,
 	"skin_name": "沧海之曜|伊势巫女"
@@ -525,7 +525,15 @@
 	"ename": 195,
 	"cname": "百里玄策",
 	"title": "嚣狂之镰",
-	"new_type": 1,
+	"new_type": 0,
 	"hero_type": 4,
 	"skin_name": "嚣狂之镰|威尼斯狂欢"
+}, {
+	"ename": 194,
+	"cname": "苏烈",
+	"title": "不屈铁壁",
+	"new_type": 1,
+	"hero_type": 3,
+	"hero_type2": 1,
+	"skin_name": "不屈铁壁|爱与和平"
 }]
